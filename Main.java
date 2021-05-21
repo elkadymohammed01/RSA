@@ -16,7 +16,7 @@ public class Main {
 	Message=i;
 	UnMessage =Encryption((long)E, N, Message);
 	System.out.println("UNMessage "+UnMessage);
-	Message=Math.pow(UnMessage, D);
+	Message=Encryption((long)D,N,UnMessage);
 	Message%=N;
 	System.out.println("Message"+Message);}
    }
